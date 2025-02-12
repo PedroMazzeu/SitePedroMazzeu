@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'fonte1';
+    src: url(fonts/PTSerif-Regular.ttf);
+}
+body{
+    background-image: url(img/background.jpg);
+}
+main{
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'fonte1';
+
+}
+h1{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translateY(-50%);
+    letter-spacing:0.2cm;
+    font-size: 5rem;
+}
+h2{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    transform: translateY(-50%);
+    letter-spacing:0.2cm; 
+    font-size: 6rem;
+}
+h3{
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    transform: translateY(-50%);
+    letter-spacing:0.3cm; 
+    font-size: 1.25rem;
+}
+a.button, a.button2 {
+    position: absolute; 
+    left: 10%; 
+    padding: 10px 30px; 
+    border-radius: 10px; 
+    background-color: transparent;
+    color: white; 
+    font-size: 1rem; 
+    border: 1px solid white; 
+    text-decoration: none; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+a.button {
+    top: calc(37% + 50px);
+}
+a.button2 {
+    top: calc(37% + 50px); 
+    left: calc(10% + 10rem); 
+}
+a.button:hover, a.button2:hover {
+    border-color: rgb(5, 0, 255);
+    color: rgb(5, 0, 255); 
+}
+@media (max-width: 768px) {
+    a.button, a.button2 {
+        left: 10%; 
+        width: 80%; 
+    }
+}
+nav{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #3333; 
+    color: white;
+    padding: 10px 0; 
+    z-index: 1000; 
+}
+.navbar-menu {
+    display: flex;
+    justify-content: center; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+.navbar-menu li {
+    margin: 0 3%; 
+}
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease; 
+}
+.navbar-menu a:hover {
+    color: rgb(5, 0, 255);
+}
+.navbar-menu a.active {
+    color: rgb(5, 0, 255); 
+    font-weight: bold; 
+}
+.social-media {
+    position: fixed; 
+    bottom: 2%; 
+    left: 10%;
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+    z-index: 1000; /
+}
+.social-icon {
+    margin: 0 10px;
+    left: 10%;
+    font-size: 1.5rem; 
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease; /
+}
+.social-icon:hover {
+    color: #0077b5; 
+    transform: scale(1.1);
+}
+.social-icon.github:hover {
+    color: #181717; 
+    transform: scale(1.1);
+}
+.resume-icon {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border: 2px solid white; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}  
+.resume-icon i {
+    margin-right: 8px; 
+}
+.resume-icon:hover {
+    background-color: rgb(5, 0, 255); 
+    color: white; 
+    border-color: rgb(5, 0, 255);
+    transform: scale(1.1);
+}
+.assp {
+    position: absolute;
+    top: 50%; 
+    right: 20%; 
+    transform: translateY(-50%) rotate(-35deg); 
+    width: 15%; 
+    height: auto; 
+    z-index: 1; 
+}
+.assm {
+    position: absolute;
+    top: 55%; 
+    right: 12%; 
+    transform: translateY(-50%) rotate(-42deg); 
+    width: 15%; 
+    height: auto; 
+    z-index: 0; 
+}
+.btn-gmail {
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+.btn-gmail:hover {
+    color: #DB4437;
+    transform: scale(1.1);
+}
+.whatsapp-button {
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.whatsapp-button:hover {
+    color: #128c7e;
+    transform: scale(1.1);
+}
+.whatsapp-button i {
+    font-size: 1.8rem; 
+    margin: 0;
+}
+

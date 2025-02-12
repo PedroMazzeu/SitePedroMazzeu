@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'fonte1';
+    src: url(fonts/PTSerif-Regular.ttf);
+}
+body{
+    background-image: url(img/background.jpg);
+}
+nav{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #3333; 
+    color: white;
+    padding: 10px 0; 
+    z-index: 1000; 
+}
+.navbar-menu {
+    display: flex;
+    justify-content: center; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+.navbar-menu li {
+    margin: 0 3%; 
+}
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease; 
+}
+.navbar-menu a:hover {
+    color: rgb(5, 0, 255);
+}
+.navbar-menu a.active {
+    color: rgb(5, 0, 255); 
+    font-weight: bold; 
+}
+main{
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'fonte1';
+
+}
+h1 {
+    position: absolute;
+    top: 20%; 
+    left: 5%; 
+    transform: translateY(-50%);
+    letter-spacing: 0.2cm;
+    font-size: 3rem;
+}
+.horizontal-line {
+    position: absolute;
+    top: 27%;
+    left: 2%;
+    width: 96%;
+    border: none;
+    height: 0.3rem; 
+    background-color: rgb(5, 0, 255); 
+}
+.habilidades-container {
+    position: absolute; 
+    top: 27%;
+    left: 5%;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px; 
+    justify-items: center; 
+    width: 90%; 
+}
+.habilidade-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    font-size: 2rem;
+}
+.habilidade-item img{
+    width: 150px; /* Tamanho fixo das imagens */
+    height: 200px; /* Mantém a proporção */
+    display: block;
+    margin: 0 auto 10px; /* Centraliza a imagem dentro do item */
+    object-fit: contain;
+}
+.horizontal-line2 {
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    width: 96%;
+    border: none;
+    height: 0.3rem; 
+    background-color: rgb(5, 0, 255); 
+}
+
+

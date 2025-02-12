@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'fonte1';
+    src: url(fonts/PTSerif-Regular.ttf);
+}
+body{
+    background-image: url(img/background.jpg);
+}
+nav{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #3333; 
+    color: white;
+    padding: 10px 0; 
+    z-index: 1000; 
+}
+.navbar-menu {
+    display: flex;
+    justify-content: center; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+.navbar-menu li {
+    margin: 0 3%; 
+}
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease; 
+}
+.navbar-menu a:hover {
+    color: rgb(5, 0, 255);
+}
+.navbar-menu a.active {
+    color: rgb(5, 0, 255); 
+    font-weight: bold; 
+}
+main{
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'fonte1';
+
+}
+h1{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translateY(-50%);
+    letter-spacing:0.2cm;
+    font-size: 3rem;
+}
+.horizontal-line {
+    position: absolute;
+    top: 27%;
+    left: 2%;
+    width: 96%;
+    border: none;
+    height: 0.3rem; 
+    background-color: rgb(5, 0, 255); 
+}
+h3{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    transform: translateY(-50%);
+    letter-spacing:0.2cm; 
+    font-size: 2rem;
+}
+p{
+    position: absolute; 
+    top: 37%;
+    left: 5%;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h4{
+    position: absolute;
+    top: 30%; 
+    right: 12.7%; 
+    width: 40%; 
+    transform: translateY(-50%);
+    letter-spacing: 0.2cm; 
+    font-size: 2rem;
+    text-align: right;
+    box-sizing: border-box;
+}
+p1{
+    position: absolute; 
+    top: 37%; 
+    right: 5%; 
+    width: 40%; 
+    margin: 0 auto; 
+    font-size: 1.5rem; 
+    text-align: justify; 
+    padding: 1rem 0; 
+    box-sizing: border-box; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+.horizontal-line2 {
+    position: absolute;
+    top: 100%;
+    left: 2%;
+    width: 96%;
+    border: none;
+    height: 0.3rem; 
+    background-color: rgb(5, 0, 255); 
+}
+
+
+
+
